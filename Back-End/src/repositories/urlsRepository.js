@@ -10,4 +10,23 @@ export const urlsRepository = {
         return res.rows[0]
     },
 
+
+    async findById(short_code) {
+        const sql = `SELECT * FROM urls WHERE short_code = $1`;
+        const res = await query (sql, [short_code]);
+        return res.rows[0]
+    },
+
+
+    async update (short_code) {
+        const sql = `UPDATE urls SET clicks = clicks +1 
+        WHERE short_code = $1;`;
+        const res = await query (sql, [short_code])
+        return res.rows[0];
+    },
+
+
+    
+    
+
 }
