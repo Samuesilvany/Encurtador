@@ -1,6 +1,6 @@
 import { query } from "../config/db.js";
 
-export const urlsRepository = {
+export const urlsRepositories = {
     async create (original_url, short_code){
 
         const sql = `INSERT INTO urls (original_Url, short_code)
@@ -23,6 +23,13 @@ export const urlsRepository = {
         WHERE short_code = $1;`;
         const res = await query (sql, [short_code])
         return res.rows[0];
+    },
+
+
+    async findAll() {
+        const sql = `SELECT * FROM urls ID = $1`;
+        const res = await query (sql);
+        return res.rows[0]
     },
  
 }

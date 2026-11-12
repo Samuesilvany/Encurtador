@@ -24,4 +24,16 @@ export const urlsController = {
             });
         }
     },
+
+
+    async findAll(req, res) {
+        try{
+            const urls = await urlsService.findAll(req.params.id);
+            res.json(urls);
+        }catch(error){
+            res.status(404).json({
+                erro: error.message
+            });
+        }
+    }
 };
