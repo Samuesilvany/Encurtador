@@ -20,5 +20,6 @@ export const urlsService = {
     if (!idExiste) {
       throw new Error("ID inexistente.");
     }
+    return await urlsRepositories.findAll();
   },
 };
