@@ -1,0 +1,19 @@
+.title {
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+
+
+.background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
