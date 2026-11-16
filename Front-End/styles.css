@@ -8,12 +8,8 @@
 
 }
 
-
-
-.background {
+*background{
   background-size: cover;
-  background-position: center;
+  align-items: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
 }
