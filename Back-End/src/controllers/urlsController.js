@@ -3,7 +3,7 @@ import { urlsService } from "../services/urlsService.js";
 export const urlsController = {
   async create(req, res) {
     try {
-      const urls = await urlsService.create(req.body);
+      const urls = await urlsService.create();
 
       res.status(201).json(urls);
     } catch (error) {

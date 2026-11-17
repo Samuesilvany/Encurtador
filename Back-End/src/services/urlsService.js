@@ -2,7 +2,7 @@ import { urlsRepositories } from "../repositories/urlsRepositories.js";
 
 export const urlsService = {
   async create(original_Url) {
-    return await urlsRepositories.create(original_Url);
+    return await urlsRepositories.create();
   },
 
   async findById(short_code) {
@@ -22,7 +22,4 @@ export const urlsService = {
     }
     return await urlsRepositories.findAll();
   },
-
-
-  
 };

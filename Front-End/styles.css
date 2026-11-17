@@ -19,17 +19,26 @@
   margin: 280px;
 }
 
-.urls-options{
+.urls-options {
   padding: 500px;
 }
 
-
-.bloco-ids{
- flex-direction: column;
-  font-size:x-large;
+.bloco-ids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  width: 20px;
+  height: 180px;
+  gap: 20px;
+  background-color: black;
 }
 
-.bloco-address{
-  flex-direction: column;
+.bloco-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 20px;
+  height: 20px;
 }
-
